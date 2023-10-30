@@ -9,7 +9,7 @@
 ### Data
 - Visual Genome (VG) [\[Images\]](https://visualgenome.org/) [\[Annotations\]](https://drive.google.com/drive/folders/1XhFVjJ2cm2HNeNVOZrUrPG_MpprHLWgv?usp=share_link).
 - MS-COCO [\[Images\]](https://cocodataset.org/#download) [\[2014 Annotations\]](https://cocodataset.org/#download).
-- Our self-consistency augmented annotations [(Download)](https://drive.google.com/drive/folders/1k0eEor_hbUlwZZLw3E4VWaffMRRf04O0?usp=drive_link).
+- Our self-consistency augmented annotations [\[Download\]](https://drive.google.com/drive/folders/1k0eEor_hbUlwZZLw3E4VWaffMRRf04O0?usp=drive_link).
 
 ### Train
 To train the model, please download [ALBEF-14M](https://github.com/salesforce/ALBEF) and run the following commands.
