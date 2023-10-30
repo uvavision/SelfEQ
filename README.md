@@ -7,16 +7,12 @@
 - Numpy, scikit-image, opencv-python, pillow, matplotlib, timm
 
 ### Data
-- Visual Genome (VG)
-  - [images](https://visualgenome.org/).
-  - [annotations](https://drive.google.com/drive/folders/1XhFVjJ2cm2HNeNVOZrUrPG_MpprHLWgv?usp=share_link).
-- MS-COCO images
-  - [images](https://cocodataset.org/#download).
-  - [annotations 2014](https://cocodataset.org/#download).
-- Our self-consistency augmented annotations. [download](https://drive.google.com/drive/folders/1k0eEor_hbUlwZZLw3E4VWaffMRRf04O0?usp=drive_link).
+- Visual Genome (VG) [\[Images\]](https://visualgenome.org/) [\[Annotations\]](https://drive.google.com/drive/folders/1XhFVjJ2cm2HNeNVOZrUrPG_MpprHLWgv?usp=share_link).
+- MS-COCO [\[Images\]](https://cocodataset.org/#download) [\[2014 Annotations\]](https://cocodataset.org/#download).
+- Our self-consistency augmented annotations [(Download)](https://drive.google.com/drive/folders/1k0eEor_hbUlwZZLw3E4VWaffMRRf04O0?usp=drive_link).
 
 ### Train
-You can run the following command to train the model:
+To train the model, please download [ALBEF-14M](https://github.com/salesforce/ALBEF) and run the following commands.
 ```Shell
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --use_env Pretrain_vg.py --config configs/Pretrain_vg.yaml --output_dir ALBEF_VG --checkpoint ALBEF.pth 
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --use_env Pretrain_coco.py --config configs/Pretrain_coco.yaml --output_dir ALBEF_COCO --checkpoint ALBEF.pth 
