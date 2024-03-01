@@ -35,3 +35,13 @@ CUDA_VISIBLE_DEVICES=0 python grounding_eval_singlegpu_refclef.py --checkpoint c
 CUDA_VISIBLE_DEVICES=0 python grounding_eval_singlegpu_flickr.py --checkpoint checkpoint_vg.pth --output_dir ALBEF_VG/flickr_results --config configs/Grounding_flickr.yaml
 CUDA_VISIBLE_DEVICES=0 python grounding_eval_singlegpu.py --checkpoint checkpoint_vg.pth --output_dir ALBEF_VG/refcoco_results --config configs/Grounding_refcoco.yaml
 ```
+
+### BibTex
+```Shell
+@article{he2023improved,
+  title={Improved Visual Grounding through Self-Consistent Explanations},
+  author={He, Ruozhen and Cascante-Bonilla, Paola and Yang, Ziyan and Berg, Alexander C and Ordonez, Vicente},
+  journal={arXiv preprint arXiv:2312.04554},
+  year={2023}
+}
+```
