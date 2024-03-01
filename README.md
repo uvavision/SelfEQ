@@ -1,5 +1,6 @@
 ## Improved Visual Grounding through Self-Consistent Explanations [CVPR 2024]
 > Authors: Ruozhen He, Paola Cascante-Bonilla, Ziyan Yang, Alexander C. Berg, Vicente Ordóñez
+
 [\[Paper\]](https://arxiv.org/abs/2312.04554) [\[Project Page\]](https://catherine-r-he.github.io/SelfEQ/)
 
 ### Requirements
